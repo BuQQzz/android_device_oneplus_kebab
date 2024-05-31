@@ -30,16 +30,16 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
-    
+
 PRODUCT_PACKAGES += \
     ApertureResTarget \
     EvolutionSettingsResTarget \
     EvolutionSystemUIResTarget \
-    OPlusExtrasResTarget \
-    OPlusFrameworksResTarget \
-    OPlusSettingsProviderResTarget \
-    OPlusSettingsResTarget \
-    OPlusSystemUIResTarget
+    # OPlusExtrasResTarget \
+    # OPlusFrameworksResTarget \
+    # OPlusSettingsProviderResTarget \
+    # OPlusSettingsResTarget \
+    # OPlusSystemUIResTarget
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
@@ -53,3 +53,4 @@ $(call inherit-product, device/oneplus/sm8250-common/common.mk)
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/kebab/kebab-vendor.mk)
+
